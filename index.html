@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
+<meta name="version" content="V10.10-mobile-fix">
 <title>享頑一番｜日本連線</title>
 <style>
 :root{--bg:#0d0b15;--surface:#191528;--card:#221d34;--border:#403153;--accent:#b781ff;--text:#f9f5ff;--muted:#b4a8c9;--good:#61d8b0;--bad:#ff879d}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,"Noto Sans TC",sans-serif}button,input,select,textarea{font:inherit}button{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:10px;padding:9px 13px;cursor:pointer}button.primary{background:linear-gradient(115deg,#763ee0,#a652e8);color:white;border:none;font-weight:700}button.soft{background:transparent}button:disabled{opacity:.55;cursor:wait}.wrap{max-width:1120px;margin:auto;padding:16px}.brand{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:16px 0}.brand h1{margin:0;font-size:22px}.brand small{color:var(--muted)}.nav{display:flex;gap:8px;overflow:auto;padding-bottom:14px;border-bottom:1px solid var(--border)}.nav button.active{background:var(--accent);color:#1b0d2b;font-weight:800}.hero{background:radial-gradient(circle at right top,#6c279e 0%,#221d34 50%,#191528 100%);border:1px solid var(--border);border-radius:18px;padding:20px;margin:18px 0}.hero strong{font-size:25px}.muted,small{color:var(--muted)}.panel{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;margin:16px 0}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.product{background:var(--surface);border:1px solid var(--border);border-radius:12px;overflow:hidden}.photo{display:block;width:100%;aspect-ratio:1;object-fit:cover;background:#2b2342}.product .info{padding:11px}.product strong{font-size:17px;color:#eed1ff}.tag{font-size:12px;background:#3a264f;border-radius:30px;padding:3px 8px;color:#dbc2ff;display:inline-block}.row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.between{justify-content:space-between}.field{margin:10px 0}.field label{display:block;font-size:13px;color:var(--muted);margin-bottom:4px}.field input,.field select,.field textarea, input[type=search]{background:#100e19;color:var(--text);border:1px solid var(--border);border-radius:8px;padding:11px;width:100%}input[type=checkbox]{accent-color:var(--accent);width:16px;height:16px}.filterSelect{background:#100e19;color:var(--text);border:1px solid var(--border);border-radius:8px;padding:10px;min-width:115px;max-width:100%}.storeLink{margin:3px 5px 3px 0;display:inline-block;padding:5px 9px;border:1px solid var(--border);border-radius:8px}.columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.listItem{border-bottom:1px solid var(--border);padding:14px 0}.listItem:last-child{border:0}.orderLine{padding:6px 0;display:flex;justify-content:space-between;gap:12px}.price{font-weight:800;font-size:21px;color:#dfadff}.flash{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#f1dcff;color:#1b1028;padding:12px 18px;border-radius:10px;box-shadow:0 10px 35px #0008;z-index:100;max-width:92vw}.error{color:var(--bad)}.success{color:var(--good)}.adminProduct{display:grid;grid-template-columns:75px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--border)}.adminProduct img{width:75px;height:75px;object-fit:cover;border-radius:9px;background:#2b2342}.adminProduct .inputs{display:grid;grid-template-columns:minmax(125px,2fr) repeat(4,minmax(82px,1fr));gap:7px}.adminProduct .inputs input,.adminProduct .inputs select{min-width:0;width:100%;background:#100e19;color:white;border:1px solid var(--border);border-radius:7px;padding:7px}.adminProduct .inputs label{font-size:12px;color:var(--muted)}.spacer{height:20px}a{color:#d7b4ff}h2{font-size:20px;margin:8px 0 14px}h3{font-size:16px;margin:12px 0}p{margin:8px 0}details{margin:10px 0}.notice{border-left:3px solid #b781ff;padding-left:12px;color:#d8cbea}.loading{opacity:.65;pointer-events:none}.checkoutWarning{border:2px solid #edb968;background:#37281e;border-radius:12px;padding:14px;margin:14px 0}.checkoutWarning strong{color:#ffd99c;font-size:17px}.policyConsent{display:flex;align-items:flex-start;gap:11px;padding:12px;background:#2c2440;border:1px solid #76548d;border-radius:10px;margin:12px 0;cursor:pointer}.policyConsent input{flex-shrink:0;margin-top:4px}.policyConsent span{flex:1}.legalNote{font-size:12px;color:#e0caec}
@@ -469,7 +470,7 @@ body.brand-v105.brand-marushima{--studioBg:#f8f6ec;--studioPaper:#fffdf7;--studi
 }
 
 
-/* V10.9.1 四商城商品直達版 - 手機進站立即看商品 */
+/* V10.10 四商城商品直達版 - 手機進站立即看商品 */
 :root{scroll-behavior:smooth}
 body.jpm-product-first .wrap{max-width:1260px}
 body.jpm-product-first .brand{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:80px;padding:12px 18px!important;margin-bottom:0!important}
@@ -553,12 +554,99 @@ body.jpm-product-first.brand-marushima .brandRealLogo{mix-blend-mode:screen}
  body.jpm-product-first .product .addButton{min-height:36px!important;font-size:11px!important}
 }
 
+
+/* V10.10 MOBILE HOTFIX - fix historical sticky top + fixed bottom collision */
+html { overflow-x:clip; }
+body.jpm-product-first { overflow-x:clip; }
+body.jpm-product-first .wrap { min-width:0; }
+body.jpm-product-first .brand { min-width:0; }
+body.jpm-product-first .brandLogo { min-width:0; }
+body.jpm-product-first .brandText { min-width:0; overflow-wrap:anywhere; }
+body.jpm-product-first .brandRealLogo { object-fit:contain; }
+body.jpm-product-first .nav {
+ top:auto!important; bottom:auto!important; height:auto!important;
+ min-height:0!important; max-height:none!important; align-items:center!important;
+}
+body.jpm-product-first .nav button { line-height:1.25!important; white-space:normal!important; }
+body.jpm-product-first .categoryRail { width:100%; max-width:100%; }
+body.jpm-product-first .categoryChip { flex:0 0 auto; }
+body.jpm-product-first .filterBar { min-width:0; max-width:100%; }
+body.jpm-product-first .filterBar input,body.jpm-product-first .filterBar select { max-width:100%; }
+body.jpm-product-first #products.grid { min-width:0; }
+body.jpm-product-first .product { min-width:0; }
+body.jpm-product-first .product .info { min-width:0; overflow-wrap:anywhere; }
+body.jpm-product-first .product .info strong { overflow-wrap:anywhere; }
+body.jpm-product-first .product .productMeta { min-width:0; }
+body.jpm-product-first .product .twdPrice { overflow-wrap:anywhere; }
+body.jpm-product-first .shippingRateScroll { max-width:100%; overflow-x:auto; }
+body.jpm-product-first .shippingRateTable { max-width:none; }
+body.jpm-product-first .adminOverlay { z-index:1500!important; }
+@media(max-width:760px){
+ body.jpm-product-first .checkoutSection,
+ body.jpm-product-first .panel,
+ body.jpm-product-first .savedProfileBar,
+ body.jpm-product-first .paymentCombineBox,
+ body.jpm-product-first .checkoutWarning { min-width:0; max-width:100%; overflow-wrap:anywhere; }
+ body.jpm-product-first .checkoutSection .field input,
+ body.jpm-product-first .checkoutSection .field textarea,
+ body.jpm-product-first .checkoutSection .field select { min-width:0; width:100%; font-size:16px!important; }
+ body.jpm-product-first .deliveryChoice { min-width:0; max-width:100%; }
+ body.jpm-product-first .adminDrawer { width:100vw!important; max-width:100vw!important; padding:12px!important; }
+ body.jpm-product-first .adminDrawer .adminProduct { min-width:0; }
+ body.jpm-product-first .adminDrawer .adminProduct .inputs { min-width:0; }
+}
+@media(max-width:620px){
+ body.jpm-product-first .wrap { padding:0 10px calc(86px + env(safe-area-inset-bottom))!important; }
+ body.jpm-product-first .brand { flex-wrap:nowrap!important; justify-content:space-between!important; align-items:center!important; }
+ body.jpm-product-first .brandLogo { flex:1 1 auto!important; gap:7px!important; }
+ body.jpm-product-first .brandLogoPicture { flex-shrink:0!important; }
+ body.jpm-product-first .brand #shopBrand { font-size:clamp(14px,4vw,17px)!important; line-height:1.22!important; }
+ body.jpm-product-first .brand small { font-size:9px!important; line-height:1.25!important; }
+ body.jpm-product-first .headerTag { flex:0 0 auto; white-space:nowrap; margin-left:4px; }
+ body.jpm-product-first .nav {
+  position:fixed!important; inset:auto 0 0 0!important;
+  top:auto!important;bottom:0!important;left:0!important;right:0!important;
+  height:auto!important;min-height:0!important;max-height:none!important;
+  margin:0!important;padding:9px 10px calc(11px + env(safe-area-inset-bottom))!important;
+  width:100%!important;display:flex!important;align-items:center!important;
+  justify-content:space-evenly!important; gap:7px!important;
+  overflow:visible!important; z-index:120!important;
+ }
+ body.jpm-product-first .nav button {
+  height:auto!important;min-height:43px!important;max-height:56px!important;
+  flex:1 1 0!important; min-width:0!important; display:flex;align-items:center;justify-content:center;
+  padding:8px 5px!important; font-size:12px!important; white-space:nowrap!important;
+ }
+ body.jpm-product-first .categoryRail { gap:5px!important; margin:0!important; padding:5px 0 7px!important; }
+ body.jpm-product-first .categoryChip { min-height:29px!important; font-size:11px!important; padding:6px 9px!important; }
+ body.jpm-product-first .catalogHeading.compact { margin:6px 0 9px!important; }
+ body.jpm-product-first .filterBar { display:flex!important; flex-wrap:wrap!important; gap:6px!important; }
+ body.jpm-product-first .filterBar .shopTextSearch { order:-1!important; width:100%!important; flex:1 1 100%!important; }
+ body.jpm-product-first .filterBar .filterSelect { flex:1 1 0!important; min-width:0!important; width:auto!important; }
+ body.jpm-product-first .filterBar button.soft { flex:0 0 auto!important; }
+ body.jpm-product-first #products.grid { grid-template-columns:repeat(2,minmax(0,1fr))!important; gap:8px!important; }
+ body.jpm-product-first .product .photoWrap { padding:0!important; }
+ body.jpm-product-first .product .photo { aspect-ratio:1!important; width:100%!important; max-width:100%!important; }
+ body.jpm-product-first .product .info { display:flex!important;flex-direction:column!important;gap:4px!important;padding:8px!important; }
+ body.jpm-product-first .product .addButton { margin-top:auto!important; white-space:normal!important; }
+ body.jpm-product-first .siteFooter { margin-bottom:0!important; }
+}
+@media(max-width:350px){
+ body.jpm-product-first .brandLogoPicture{width:50px!important;height:49px!important;}
+ body.jpm-product-first .brand #shopBrand{font-size:14px!important;}
+ body.jpm-product-first .brand small{font-size:8px!important;}
+ body.jpm-product-first .headerTag{font-size:8px!important;padding:4px 5px!important;}
+ body.jpm-product-first .categoryChip{font-size:10.5px!important;padding:5px 7px!important;}
+ body.jpm-product-first .nav button{font-size:11px!important;}
+ body.jpm-product-first .product .info{padding:7px!important;}
+}
+
 </style></head>
 <body data-channel="xiangwan" data-shop-name="享頑一番" class="brand-xiangwan brand-v105 jpm-product-first"><main class="wrap">
  <header class="brand"><div class="brandLogo"><div class="brandLogoPicture"><img class="brandRealLogo" src="assets/brand-logo.png" alt="享頑一番 官方標誌" loading="eager"></div><div class="brandText"><h1 id="shopBrand">享頑一番</h1><small>熱鬧日本祭典・動漫收藏</small></div></div><span class="headerTag" id="shopBadge">日本連線 · ×0.27</span></header>
  <nav class="nav"><button id="tabShop" onclick="switchTab('shop')" class="active">逛商品</button><button id="tabCart" onclick="switchTab('cart')">購物車 <span id="cartCount">0</span></button><button id="tabOrder" onclick="switchTab('order')">查詢訂單</button></nav>
  <div id="content"></div>
- <footer class="siteFooter"><span>© <span id="footerShop">享頑一番</span> · 日圓換算報價 <span id="footerRate">×0.27</span> · 運費另計 · V10.9.1</span><button class="adminSecret" aria-label="開啟店主後台" title="店主" onclick="openAdmin()">⚙</button></footer>
+ <footer class="siteFooter"><span>© <span id="footerShop">享頑一番</span> · 日圓換算報價 <span id="footerRate">×0.27</span> · 運費另計 · V10.10</span><button class="adminSecret" aria-label="開啟店主後台" title="店主" onclick="openAdmin()">⚙</button></footer>
 </main><div id="adminOverlay" hidden class="adminOverlay" onclick="if(event.target===this)closeAdmin()"><aside class="adminDrawer" role="dialog" aria-modal="true" aria-labelledby="adminTitle"><header class="adminTop"><div><small>MANAGEMENT</small><h2 id="adminTitle">店主後台</h2></div><button class="closeAdmin" aria-label="關閉後台" onclick="closeAdmin()">✕</button></header><div id="adminSurface"></div></aside></div><div id="toast" hidden class="flash"></div>
 <script>
 // JPM V9.6.2：此網頁直接指定已確認的 GAS 部署網址，避免舊 config.js 快取導致未連線。
