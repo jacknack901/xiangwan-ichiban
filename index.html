@@ -469,7 +469,7 @@ body.brand-v105.brand-marushima{--studioBg:#f8f6ec;--studioPaper:#fffdf7;--studi
 }
 
 
-/* V10.9 四商城商品直達版 - 手機進站立即看商品 */
+/* V10.9.1 四商城商品直達版 - 手機進站立即看商品 */
 :root{scroll-behavior:smooth}
 body.jpm-product-first .wrap{max-width:1260px}
 body.jpm-product-first .brand{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:80px;padding:12px 18px!important;margin-bottom:0!important}
@@ -555,10 +555,10 @@ body.jpm-product-first.brand-marushima .brandRealLogo{mix-blend-mode:screen}
 
 </style></head>
 <body data-channel="xiangwan" data-shop-name="享頑一番" class="brand-xiangwan brand-v105 jpm-product-first"><main class="wrap">
- <header class="brand"><div class="brandLogo"><div class="brandLogoPicture"><img class="brandRealLogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32lR9WxzCVANVxjQuE1JFLjjxIGbgZ6Ysjtuwd9CnyA&amp;s=10" alt="享頑一番 官方標誌" referrerpolicy="no-referrer" onerror="this.style.display='none';this.parentElement.style.display='none'" loading="eager"></div><div class="brandText"><h1 id="shopBrand">享頑一番</h1><small>熱鬧日本祭典・動漫收藏</small></div></div><span class="headerTag" id="shopBadge">日本連線 · ×0.27</span></header>
+ <header class="brand"><div class="brandLogo"><div class="brandLogoPicture"><img class="brandRealLogo" src="assets/brand-logo.png" alt="享頑一番 官方標誌" loading="eager"></div><div class="brandText"><h1 id="shopBrand">享頑一番</h1><small>熱鬧日本祭典・動漫收藏</small></div></div><span class="headerTag" id="shopBadge">日本連線 · ×0.27</span></header>
  <nav class="nav"><button id="tabShop" onclick="switchTab('shop')" class="active">逛商品</button><button id="tabCart" onclick="switchTab('cart')">購物車 <span id="cartCount">0</span></button><button id="tabOrder" onclick="switchTab('order')">查詢訂單</button></nav>
  <div id="content"></div>
- <footer class="siteFooter"><span>© <span id="footerShop">享頑一番</span> · 日圓換算報價 <span id="footerRate">×0.27</span> · 運費另計 · V10.9</span><button class="adminSecret" aria-label="開啟店主後台" title="店主" onclick="openAdmin()">⚙</button></footer>
+ <footer class="siteFooter"><span>© <span id="footerShop">享頑一番</span> · 日圓換算報價 <span id="footerRate">×0.27</span> · 運費另計 · V10.9.1</span><button class="adminSecret" aria-label="開啟店主後台" title="店主" onclick="openAdmin()">⚙</button></footer>
 </main><div id="adminOverlay" hidden class="adminOverlay" onclick="if(event.target===this)closeAdmin()"><aside class="adminDrawer" role="dialog" aria-modal="true" aria-labelledby="adminTitle"><header class="adminTop"><div><small>MANAGEMENT</small><h2 id="adminTitle">店主後台</h2></div><button class="closeAdmin" aria-label="關閉後台" onclick="closeAdmin()">✕</button></header><div id="adminSurface"></div></aside></div><div id="toast" hidden class="flash"></div>
 <script>
 // JPM V9.6.2：此網頁直接指定已確認的 GAS 部署網址，避免舊 config.js 快取導致未連線。
@@ -573,7 +573,7 @@ const SHOP_LABEL=document.body.dataset.shopName||'日本連線商城';
 const SHOP_SHORT=SHOP_CHANNEL==='wanye'?'頑夜店內':SHOP_CHANNEL==='partner'?'瘋Toys':SHOP_LABEL;
 const SHOP_PREFIX='wanye_japan_'+SHOP_CHANNEL+'_';
 const state={tab:'shop',items:[],total:0,offset:0,search:'',store:'',category:'',cart:[],token:'',lastOrder:null,adminProducts:[],adminProductOffset:0,adminProductDraft:true,adminStoreFilter:'',adminCategoryFilter:'',adminOrders:[],adminInfo:null,syncMessage:'',driveOpen:false,bulkOpen:false};
-const $=s=>document.querySelector(s), H=s=>String(s===null||s===undefined?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const $=s=>document.querySelector(s), H=s=>String(s===null||s===undefined?'':s).replace(/[&<>"']/g,c=>({'&':'&','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const STORES=['未指定店家','安麗美特','唐吉訶德','藥妝店','其他店家'];
 const PURCHASE_TERMS_VERSION='2026-10-24-v2';
 const CATEGORIES=['未分類','卡牌類','公仔類','家電類','雜物類','扭蛋類','陀螺逆轉金幣類'];
