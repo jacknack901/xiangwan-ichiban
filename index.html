@@ -289,7 +289,7 @@ body{font-size:15px}button,input,select,textarea{font-size:16px}
 @keyframes checkoutSpin{to{transform:rotate(360deg)}}
 .checkoutDialogCard button:focus-visible{outline:3px solid #ab81db;outline-offset:2px}
 @media(max-width:550px){.checkoutDialogOverlay{padding:12px;align-items:center}.checkoutDialogCard{padding:19px 16px;border-radius:17px;max-height:86dvh}.checkoutDialogCard h2{font-size:20px}.checkoutDialogActions{grid-template-columns:1fr 1fr}.checkoutDialogActions button{font-size:14px}}
-/* V10.4: 享頑一番 — Japanese retro festival / vermilion / washi */
+/* V10.8: 享頑一番 — Japanese retro festival / vermilion / washi */
 body.brand-xiangwan{--bg:#f6f2e9;--surface:#fffdf8;--card:#f2e7d7;--border:#dccbb2;--accent:#b83f2a;--text:#31261f;--muted:#826a5a;background:repeating-linear-gradient(0deg,rgba(153,87,39,.015),rgba(153,87,39,.015) 1px,transparent 1px,transparent 4px),#f6f2e9;font-family:"Noto Serif TC","Songti TC",Georgia,serif}
 .brand-xiangwan .wrap{max-width:1190px}.brand-xiangwan .brand{position:relative;margin:0 -6px 18px;padding:24px 22px 21px;background:#fffaf0;border-bottom:5px solid #b83f2a;box-shadow:0 7px 0 #e5d6c2}
 .brand-xiangwan .brand:before{content:'一番';display:flex;align-items:center;justify-content:center;flex-shrink:0;height:64px;width:64px;background:#b83f2a;color:#fff9ed;font-weight:900;font-size:25px;border-radius:50%;border:4px double #fff4df;box-shadow:0 0 0 2px #b83f2a}
@@ -306,7 +306,7 @@ body.brand-xiangwan{--bg:#f6f2e9;--surface:#fffdf8;--card:#f2e7d7;--border:#dccb
 
 
 
-/* V10.5 Brand Design System — storefront visual layer only. Merchant order/GAS code remains original V10.4. */
+/* V10.8 Brand Design System — storefront visual layer only. Merchant order/GAS code remains original V10.8. */
 body.brand-v105{--studioAccent:#a56bf8;--studioBg:#10101b;--studioPaper:#171827;--studioText:#f8f6ff;--studioMuted:#c1bdd6;--studioStroke:rgba(255,255,255,.16);--studioButton:#7f4de6;background:var(--studioBg);color:var(--studioText);font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif}
 body.brand-v105.brand-wanye{--studioBg:#080914;--studioPaper:#111323;--studioAccent:#bd66ff;--studioButton:#a347ff;--studioText:#f7f4ff;--studioMuted:#b8b5d2;--studioStroke:#3c325b;
  background:radial-gradient(circle at 82% 7%,#28133d 0,transparent 38%),#080914}
@@ -440,127 +440,125 @@ body.brand-v105.brand-marushima{--studioBg:#f8f6ec;--studioPaper:#fffdf7;--studi
 }
 
 
-
-/* V10.6 品牌化 LOGO 優化與整體介面強化 */
-body.brand-v106{position:relative;min-height:100vh;background-attachment:fixed}
-body.brand-v106::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;opacity:.65}
-body.brand-v106.brand-wanye::before{background:radial-gradient(circle at 15% 18%,rgba(189,102,255,.16),transparent 26%),radial-gradient(circle at 85% 10%,rgba(82,139,255,.10),transparent 24%),linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0) 20%)}
-body.brand-v106.brand-xiangwan::before{background:radial-gradient(circle at 15% 18%,rgba(184,63,42,.10),transparent 24%),radial-gradient(circle at 85% 10%,rgba(221,177,109,.12),transparent 24%),repeating-linear-gradient(90deg,rgba(160,83,49,.03),rgba(160,83,49,.03) 1px,transparent 1px,transparent 22px)}
-body.brand-v106.brand-marushima::before{background:radial-gradient(circle at 15% 18%,rgba(8,72,61,.10),transparent 24%),radial-gradient(circle at 85% 10%,rgba(177,140,84,.12),transparent 24%),linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0) 22%)}
-.brand-v106 .brand{position:relative;overflow:hidden;border-radius:0 0 24px 24px!important;margin-bottom:18px!important;box-shadow:0 18px 42px rgba(0,0,0,.08)!important}
-.brand-v106 .brand::after{content:"";position:absolute;left:24px;right:24px;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);opacity:.6}
-.brand-v106 .brandLogo{align-items:center;gap:18px}
-.brand-v106 .brandLogoPicture{width:clamp(102px,16vw,186px)!important;height:92px!important;background:transparent!important;border:0!important;border-radius:20px!important;box-shadow:none!important;padding:0!important;position:relative;overflow:visible!important;isolation:isolate}
-.brand-v106 .brandLogoPicture::before{content:"";position:absolute;inset:-8px;z-index:-2;border-radius:26px;background:var(--logoPlateBg,rgba(255,255,255,.72));border:1px solid var(--logoPlateStroke,rgba(255,255,255,.32));box-shadow:var(--logoPlateShadow,0 14px 30px rgba(0,0,0,.10))}
-.brand-v106 .brandLogoPicture::after{content:"";position:absolute;inset:3px;z-index:-1;border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.82),rgba(255,255,255,.32))}
-.brand-v106 .brandRealLogo{display:block;max-width:100%!important;max-height:78px!important;width:auto!important;height:auto!important;object-fit:contain;transform:translateZ(0)}
-.brand-v106.brand-xiangwan .brandRealLogo,.brand-v106.brand-marushima .brandRealLogo{mix-blend-mode:multiply;filter:contrast(1.07) saturate(1.06) drop-shadow(0 8px 18px rgba(0,0,0,.08))}
-.brand-v106.brand-wanye .brandRealLogo{filter:contrast(1.06) saturate(1.08) drop-shadow(0 10px 26px rgba(189,102,255,.30))}
-.brand-v106 .brandText{display:flex;flex-direction:column;gap:5px}
-.brand-v106 .brand #shopBrand{font-size:clamp(22px,2.6vw,34px)!important;line-height:1.15!important;letter-spacing:.04em!important;margin:0!important}
-.brand-v106 .brand small{font-size:11px!important;letter-spacing:.16em!important;opacity:.92}
-.brand-v106 .headerTag{backdrop-filter:blur(12px);padding:9px 14px!important;box-shadow:0 8px 18px rgba(0,0,0,.06)}
-.brand-v106.brand-xiangwan{--logoPlateBg:linear-gradient(180deg,rgba(255,248,238,.96),rgba(251,236,216,.92));--logoPlateStroke:#e0c39f;--logoPlateShadow:0 14px 26px rgba(182,104,42,.12)}
-.brand-v106.brand-marushima{--logoPlateBg:linear-gradient(180deg,rgba(255,252,247,.98),rgba(244,238,220,.95));--logoPlateStroke:#d2be95;--logoPlateShadow:0 14px 28px rgba(48,70,45,.12)}
-.brand-v106.brand-wanye{--logoPlateBg:linear-gradient(180deg,rgba(17,19,35,.92),rgba(20,16,40,.85));--logoPlateStroke:rgba(189,102,255,.22);--logoPlateShadow:0 14px 32px rgba(0,0,0,.34)}
-
-.brand-v106 .nav{position:sticky;top:0;z-index:50;padding-top:12px!important;padding-bottom:14px!important;background:linear-gradient(180deg,rgba(248,248,252,.96),rgba(248,248,252,.72),rgba(248,248,252,0));backdrop-filter:blur(12px)}
-.brand-v106.brand-wanye .nav{background:linear-gradient(180deg,rgba(11,13,24,.96),rgba(11,13,24,.76),rgba(11,13,24,0))}
-.brand-v106 .nav button{box-shadow:0 6px 18px rgba(0,0,0,.04)!important}
-.brand-v106 .nav button.active{box-shadow:0 12px 22px rgba(0,0,0,.10)!important}
-
-.brand-v106 .storefrontHero{border-radius:28px!important;box-shadow:0 22px 48px rgba(0,0,0,.18)!important;min-height:370px!important;overflow:hidden}
-.brand-v106 .storefrontHero::after{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.20),rgba(255,255,255,0) 70%)}
-.brand-v106 .heroIllustration{width:58%!important;filter:saturate(1.03) contrast(1.03)}
-.brand-v106 .heroCopy{width:min(58%,540px)!important;gap:2px}
-.brand-v106 .heroEyebrow{display:inline-flex;align-items:center;gap:8px;padding:6px 11px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
-.brand-v106 .storefrontHero h2{margin-top:14px!important;margin-bottom:12px!important}
-.brand-v106 .storefrontHero p{font-size:15px!important;line-height:1.85!important;max-width:490px!important}
-.brand-v106 .storefrontHero .heroAction{box-shadow:0 14px 28px rgba(0,0,0,.16)!important}
-.brand-v106 .storefrontHero .heroFine{padding:7px 12px;border-radius:999px;background:rgba(255,255,255,.12);display:inline-block}
-.brand-v106.brand-xiangwan .storefrontHero{box-shadow:0 18px 0 #e8d8c4,0 30px 50px rgba(88,34,21,.20)!important}
-.brand-v106.brand-marushima .storefrontHero{box-shadow:0 18px 42px rgba(6,60,52,.18)!important}
-.brand-v106.brand-wanye .storefrontHero{box-shadow:0 26px 56px rgba(8,10,28,.45)!important}
-
-.brand-v106 .introStrip,.brand-v106 .filterBar,.brand-v106 .panel,.brand-v106 .shippingRateNotice,.brand-v106 .savedProfileBar,.brand-v106 .paymentCombineBox,.brand-v106 .paymentBox{border-radius:18px!important;box-shadow:0 10px 28px rgba(0,0,0,.04)}
-.brand-v106 .introStrip{padding:18px 20px!important;gap:16px!important}
-.brand-v106 .quickCategories{gap:14px!important}
-.brand-v106 .quickCategory{position:relative;overflow:hidden;min-height:112px!important;transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease!important}
-.brand-v106 .quickCategory::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.22),transparent 65%);pointer-events:none}
-.brand-v106 .quickCategory:hover,.brand-v106 .quickCategory:focus-visible{transform:translateY(-3px);box-shadow:0 18px 30px rgba(0,0,0,.08)!important}
-.brand-v106 .categoryIcon{font-size:30px!important}
-.brand-v106 .catalogHeading{margin-top:28px!important}
-.brand-v106 .catalogHeading small{font-size:12px!important;letter-spacing:.18em!important}
-.brand-v106 .filterBar{padding:15px!important;gap:10px!important}
-.brand-v106 .filterBar .shopTextSearch,.brand-v106 .filterBar .filterSelect{min-height:46px!important}
-.brand-v106 .grid{gap:18px!important}
-.brand-v106 .product{display:flex;flex-direction:column;min-height:100%;overflow:hidden;box-shadow:0 12px 28px rgba(0,0,0,.05)!important;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease!important}
-.brand-v106 .product:hover{transform:translateY(-4px)!important;box-shadow:0 16px 32px rgba(0,0,0,.10)!important}
-.brand-v106 .photoWrap{background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,0));padding:8px}
-.brand-v106 .product .photo{object-fit:contain!important;padding:6px;background:rgba(255,255,255,.52);border-radius:16px}
-.brand-v106.brand-wanye .product .photo{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02))}
-.brand-v106 .product .info{display:flex;flex-direction:column;gap:6px;flex:1;padding:15px!important}
-.brand-v106 .product .tag{font-weight:800;letter-spacing:.03em}
-.brand-v106 .productName{min-height:3.1em!important;max-height:3.1em!important}
-.brand-v106 .product .info strong{font-size:22px!important}
-.brand-v106 .product .addButton{margin-top:auto!important;min-height:44px!important;border-radius:12px!important}
-.brand-v106 .productMeta{display:flex;gap:8px;flex-wrap:wrap}
-.brand-v106 .productMeta span{padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.06)}
-.brand-v106.brand-xiangwan .productMeta span,.brand-v106.brand-marushima .productMeta span{background:rgba(0,0,0,.035)}
-
-.brand-v106 .studioBenefits{margin-top:30px!important;gap:15px!important}
-.brand-v106 .studioBenefit{border-radius:18px!important;padding:18px!important;box-shadow:0 10px 26px rgba(0,0,0,.04)}
-.brand-v106 .checkoutSection,.brand-v106 .deliveryChoice,.brand-v106 .postalCard,.brand-v106 .policyConsent,.brand-v106 .checkoutWarning,.brand-v106 .paymentBox{border-radius:18px!important}
-.brand-v106 .checkoutSection{padding:18px!important}
-.brand-v106 .checkoutStepLabel{font-weight:900;letter-spacing:.02em}
-.brand-v106 .checkoutStepNum{box-shadow:0 8px 18px rgba(0,0,0,.12)}
-.brand-v106 .field input,.brand-v106 .field select,.brand-v106 .field textarea{min-height:46px}
-.brand-v106 .savedProfileBar,.brand-v106 .paymentCombineBox,.brand-v106 .paymentBox,.brand-v106 .shippingRateNotice{padding:16px!important}
-.brand-v106 .siteFooter{padding:26px 0 16px!important}
-
-@media(max-width:820px){
- .brand-v106 .grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
- .brand-v106 .heroIllustration{width:64%!important}
+/* V10.8 商品優先版：拿掉大型公告/主視覺，讓客人一進站就先看到商品 */
+.brandLogo{display:flex;align-items:center;gap:12px;min-width:0;flex:1}
+.brandText{min-width:0}
+.brandText h1{margin:0}
+.brandText small{display:block;margin-top:4px;line-height:1.35}
+.brandLogoPicture{display:flex;align-items:center;justify-content:center;overflow:hidden;background:transparent !important;border:none !important;box-shadow:none !important}
+.brandRealLogo{display:block;max-width:100%;max-height:100%;object-fit:contain;mix-blend-mode:multiply}
+.compactShopTop{display:grid;gap:12px;margin:2px 0 18px}
+.compactIntro{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:12px 14px;border-radius:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);backdrop-filter:blur(8px)}
+.compactIntro strong{font-size:1rem}
+.compactIntro span{font-size:.82rem;opacity:.9;line-height:1.55;flex:1 1 320px}
+.categoryRail{display:flex;flex-wrap:wrap;gap:8px}
+.categoryChip{border:none;border-radius:999px;padding:7px 12px;font-size:.82rem;line-height:1;cursor:pointer;transition:.18s ease;box-shadow:none}
+.categoryChip:hover{transform:translateY(-1px)}
+.categoryChip.active{font-weight:700}
+.catalogHeading.compact{margin-bottom:10px}
+.catalogHeading.compact h2{margin-bottom:4px}
+#productCatalogue{margin-top:0}
+.storefrontHero,.introStrip,.studioBenefits{display:none !important}
+@media (max-width:768px){
+  .brandLogo{gap:9px}
+  .brandLogoPicture{width:72px !important;height:54px !important}
+  .compactIntro{padding:10px 12px;gap:8px}
+  .compactIntro strong{font-size:.92rem}
+  .compactIntro span{font-size:.76rem}
+  .categoryChip{padding:6px 10px;font-size:.76rem}
 }
+
+
+/* V10.9 四商城商品直達版 - 手機進站立即看商品 */
+:root{scroll-behavior:smooth}
+body.jpm-product-first .wrap{max-width:1260px}
+body.jpm-product-first .brand{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:80px;padding:12px 18px!important;margin-bottom:0!important}
+body.jpm-product-first .brand:before,body.jpm-product-first .brand:after{content:none!important;display:none!important}
+body.jpm-product-first .brandLogo{display:flex;align-items:center;gap:12px;flex:1;min-width:0}
+body.jpm-product-first .brandLogoPicture{position:relative;display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:86px!important;height:66px!important;max-width:22vw;padding:0!important;overflow:visible!important;background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important}
+body.jpm-product-first .brandLogoPicture:before,body.jpm-product-first .brandLogoPicture:after{content:none!important;display:none!important}
+body.jpm-product-first .brandRealLogo{object-fit:contain;display:block;width:100%;max-width:100%!important;height:100%;max-height:100%!important;padding:0!important;border:0!important;filter:none!important}
+body.jpm-product-first .brandText{min-width:0}
+body.jpm-product-first .brand h1{font-size:clamp(19px,2vw,25px)!important;line-height:1.2;margin:0;letter-spacing:.02em!important}
+body.jpm-product-first .brand small{display:block;font-size:10px!important;line-height:1.35;letter-spacing:.04em!important;margin-top:4px}
+body.jpm-product-first .headerTag{white-space:nowrap;font-size:11px;border-radius:999px;padding:6px 10px;box-shadow:none!important}
+body.jpm-product-first .nav{position:relative;display:flex;gap:6px;padding:8px 0!important;margin:0 0 8px!important;border:0;overflow:visible;background:transparent!important;box-shadow:none!important;backdrop-filter:none!important}
+body.jpm-product-first .nav button{min-height:37px;padding:7px 15px!important;font-size:13px!important;box-shadow:none!important}
+body.jpm-product-first .compactShopTop{margin:0 0 7px!important;display:block}
+body.jpm-product-first .compactIntro{display:none!important}
+body.jpm-product-first .categoryRail{display:flex;flex-wrap:wrap;gap:6px;padding:5px 0 10px;margin:0}
+body.jpm-product-first .categoryChip{display:inline-flex;align-items:center;justify-content:center;min-height:29px;line-height:1.2;font-size:12px!important;padding:5px 9px!important;border:1px solid var(--chip-line,#c7c4d3)!important;background:var(--chip-bg,#fff)!important;color:var(--chip-text,#312c40)!important;border-radius:999px!important;white-space:nowrap;font-weight:600!important;box-shadow:none!important}
+body.jpm-product-first .categoryChip.active,body.jpm-product-first .categoryChip:hover{background:var(--chip-active,#5437ac)!important;color:var(--chip-active-text,#fff)!important;border-color:var(--chip-active,#5437ac)!important}
+body.jpm-product-first #productCatalogue{margin:0!important;padding:0!important}
+body.jpm-product-first .catalogHeading.compact{margin:0 0 8px!important;padding:0!important;display:flex;justify-content:space-between;align-items:center;gap:8px}
+body.jpm-product-first .catalogHeading.compact h2{font-size:20px!important;line-height:1.25;margin:0!important}
+body.jpm-product-first .catalogHeading.compact small{font-size:10px;letter-spacing:.1em}
+body.jpm-product-first .filterBar{display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:7px!important;margin:0 0 10px!important;box-shadow:none!important;border-radius:12px!important}
+body.jpm-product-first .filterBar .shopTextSearch{order:0;flex:2 1 230px;min-width:140px!important;min-height:37px!important;font-size:14px;padding:7px 11px!important}
+body.jpm-product-first .filterBar .filterSelect{order:1;flex:1 1 120px;min-height:37px!important;min-width:80px!important;font-size:12px!important;padding:6px 8px!important}
+body.jpm-product-first .filterBar button.soft{order:2;min-height:36px;padding:7px 12px!important}
+body.jpm-product-first #products.grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:11px!important}
+body.jpm-product-first .product{border-radius:12px!important;min-width:0;box-shadow:none!important}
+body.jpm-product-first .product .photoWrap{padding:0!important}
+body.jpm-product-first .product .photo{aspect-ratio:1!important;object-fit:contain!important;padding:3px!important;width:100%;border-radius:0!important}
+body.jpm-product-first .product .info{padding:9px!important;gap:3px!important}
+body.jpm-product-first .product .info strong{font-size:18px!important}
+body.jpm-product-first .productName{font-size:12px;min-height:2.6em!important;max-height:2.6em!important;line-height:1.35;margin:4px 0 5px}
+body.jpm-product-first .product .productMeta{font-size:10px;gap:5px}
+body.jpm-product-first .product .paymentModeTag{margin:2px 0;font-size:10px}
+body.jpm-product-first .product .addButton{min-height:38px!important;padding:6px!important;font-size:12px!important;border-radius:8px!important}
+body.jpm-product-first .studioBenefits,body.jpm-product-first .storefrontHero,body.jpm-product-first .introStrip{display:none!important}
+body.jpm-product-first .siteFooter{padding:18px 0 12px}
+body.jpm-product-first.brand-partner{--chip-line:#ddd7fb;--chip-bg:#fff;--chip-text:#4d3c93;--chip-active:#7850d0;--chip-active-text:white}
+body.jpm-product-first.brand-wanye{--chip-line:#4b3b71;--chip-bg:#171324;--chip-text:#e5d3ff;--chip-active:#a543f2;--chip-active-text:white}
+body.jpm-product-first.brand-xiangwan{--chip-line:#dabd9a;--chip-bg:#fff6e8;--chip-text:#834532;--chip-active:#b83f2a;--chip-active-text:white}
+body.jpm-product-first.brand-marushima{--chip-line:#c4b18e;--chip-bg:#fdf9ed;--chip-text:#164b42;--chip-active:#064c3f;--chip-active-text:#fff3d7}
+body.jpm-product-first.brand-partner .brand{background:linear-gradient(115deg,#5642ac,#b479d8);color:white;border-radius:0 0 14px 14px!important}
+body.jpm-product-first.brand-partner .brandRealLogo{mix-blend-mode:normal!important;filter:drop-shadow(0 2px 3px rgba(0,0,0,.13))!important}
+body.jpm-product-first.brand-wanye .brand{background:#0d0b1b;border-radius:0 0 12px 12px!important}
+body.jpm-product-first.brand-xiangwan .brand{background:#fff8ec;border-bottom:2px solid #b83f2a!important;border-radius:0 0 12px 12px!important}
+body.jpm-product-first.brand-marushima .brand{background:#073b32;border-bottom:2px solid #ba9655!important;border-radius:0 0 12px 12px!important}
+body.jpm-product-first.brand-marushima .brand h1{color:#f3dca2!important}
+body.jpm-product-first.brand-marushima .brand small{color:#dfd4b3!important}
+body.jpm-product-first.brand-wanye .brandRealLogo{mix-blend-mode:screen}
+body.jpm-product-first.brand-xiangwan .brandRealLogo{mix-blend-mode:multiply}
+body.jpm-product-first.brand-marushima .brandRealLogo{mix-blend-mode:screen}
+/* 原版外部商標若載入失敗，文字標題仍可正常顯示 */
+@media(max-width:1120px){body.jpm-product-first #products.grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:760px){body.jpm-product-first #products.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:620px){
- body.brand-v106{background-attachment:scroll}
- .brand-v106 .wrap{padding:0 13px 100px!important}
- .brand-v106 .brand{border-radius:0 0 18px 18px!important;box-shadow:0 12px 26px rgba(0,0,0,.08)!important}
- .brand-v106 .brand::after{left:12px;right:12px}
- .brand-v106 .brandLogo{gap:10px!important;min-width:0}
- .brand-v106 .brandLogoPicture{width:82px!important;height:62px!important}
- .brand-v106 .brandLogoPicture::before{inset:-5px;border-radius:16px}
- .brand-v106 .brandLogoPicture::after{border-radius:12px}
- .brand-v106 .brandRealLogo{max-height:53px!important}
- .brand-v106 .brand #shopBrand{font-size:18px!important}
- .brand-v106 .brand small{font-size:9px!important;letter-spacing:.08em!important}
- .brand-v106 .headerTag{font-size:10px!important;padding:6px 9px!important;align-self:flex-start}
- .brand-v106 .nav{padding:9px 10px max(12px,env(safe-area-inset-bottom))!important;box-shadow:0 -8px 22px rgba(0,0,0,.10)!important}
- .brand-v106 .nav button{border-radius:15px!important}
- .brand-v106 .storefrontHero{min-height:350px!important;padding:22px 18px!important;border-radius:20px!important}
- .brand-v106 .storefrontHero::after{width:120px;height:120px;right:-28px;top:-24px}
- .brand-v106 .heroIllustration{width:79%!important;opacity:.92}
- .brand-v106 .heroCopy{width:85%!important}
- .brand-v106 .heroEyebrow{font-size:10px!important;padding:5px 9px!important}
- .brand-v106 .storefrontHero h2{font-size:30px!important;line-height:1.18!important}
- .brand-v106 .storefrontHero p{font-size:12px!important;max-width:245px!important;line-height:1.8!important}
- .brand-v106 .storefrontHero .heroFine{font-size:10px!important}
- .brand-v106 .quickCategories{grid-template-columns:repeat(2,minmax(0,1fr))!important}
- .brand-v106 .quickCategory{min-height:96px!important}
- .brand-v106 .grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px!important}
- .brand-v106 .product .photo{border-radius:14px!important}
- .brand-v106 .product .info{padding:12px!important}
- .brand-v106 .product .info strong{font-size:19px!important}
- .brand-v106 .filterBar,.brand-v106 .introStrip,.brand-v106 .panel,.brand-v106 .savedProfileBar,.brand-v106 .paymentCombineBox,.brand-v106 .paymentBox,.brand-v106 .shippingRateNotice{border-radius:16px!important}
- .brand-v106 .studioBenefits{grid-template-columns:1fr!important}
+ body.jpm-product-first .wrap{padding:0 10px 78px!important}
+ body.jpm-product-first .brand{margin:0 -10px 3px!important;padding:7px 11px!important;min-height:65px;gap:6px}
+ body.jpm-product-first .brandLogo{gap:7px!important}
+ body.jpm-product-first .brandLogoPicture{width:62px!important;height:55px!important;max-width:18vw!important}
+ body.jpm-product-first .brand h1{font-size:17px!important}
+ body.jpm-product-first .brand small{font-size:9px!important;letter-spacing:0!important}
+ body.jpm-product-first .headerTag{font-size:9px!important;padding:4px 6px!important}
+ body.jpm-product-first .nav{position:fixed;bottom:0;left:0;right:0;z-index:120;display:flex;margin:0!important;padding:8px 10px max(9px,env(safe-area-inset-bottom))!important;background:var(--surface,#fff)!important;box-shadow:0 -5px 18px rgba(0,0,0,.10)!important;border-top:1px solid var(--border,#e5e5e5)!important;gap:5px}
+ body.jpm-product-first .nav button{flex:1;min-width:0;padding:9px 4px!important;font-size:12px!important}
+ body.jpm-product-first .categoryRail{gap:5px!important;padding:6px 0 10px!important}
+ body.jpm-product-first .categoryChip{font-size:11px!important;padding:5px 8px!important;min-height:27px!important}
+ body.jpm-product-first .catalogHeading.compact{margin:1px 0 8px!important}
+ body.jpm-product-first .catalogHeading.compact h2{font-size:18px!important}
+ body.jpm-product-first .catalogHeading.compact small{display:none}
+ body.jpm-product-first .filterBar{padding:5px!important;gap:5px!important;margin-bottom:8px!important}
+ body.jpm-product-first .filterBar .shopTextSearch{min-width:100%!important;order:-1;flex:1 1 100%;min-height:36px!important}
+ body.jpm-product-first .filterBar .filterSelect{min-width:0!important;flex:1 1 35%;font-size:12px!important;min-height:34px!important}
+ body.jpm-product-first .filterBar button.soft{min-height:34px!important;font-size:12px!important}
+ body.jpm-product-first #products.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px!important}
+ body.jpm-product-first .product .info{padding:7px!important}
+ body.jpm-product-first .product .info strong{font-size:17px!important}
+ body.jpm-product-first .product .twdPrice{font-size:11px!important}
+ body.jpm-product-first .product .productMeta{font-size:9px!important}
+ body.jpm-product-first .product .addButton{min-height:36px!important;font-size:11px!important}
 }
 
 </style></head>
-<body data-channel="xiangwan" data-shop-name="享頑一番" class="brand-xiangwan brand-v105 brand-v106"><main class="wrap">
+<body data-channel="xiangwan" data-shop-name="享頑一番" class="brand-xiangwan brand-v105 jpm-product-first"><main class="wrap">
  <header class="brand"><div class="brandLogo"><div class="brandLogoPicture"><img class="brandRealLogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32lR9WxzCVANVxjQuE1JFLjjxIGbgZ6Ysjtuwd9CnyA&amp;s=10" alt="享頑一番 官方標誌" referrerpolicy="no-referrer" onerror="this.style.display='none';this.parentElement.style.display='none'" loading="eager"></div><div class="brandText"><h1 id="shopBrand">享頑一番</h1><small>熱鬧日本祭典・動漫收藏</small></div></div><span class="headerTag" id="shopBadge">日本連線 · ×0.27</span></header>
  <nav class="nav"><button id="tabShop" onclick="switchTab('shop')" class="active">逛商品</button><button id="tabCart" onclick="switchTab('cart')">購物車 <span id="cartCount">0</span></button><button id="tabOrder" onclick="switchTab('order')">查詢訂單</button></nav>
  <div id="content"></div>
- <footer class="siteFooter"><span>© <span id="footerShop">享頑一番</span> · 日圓換算報價 <span id="footerRate">×0.27</span> · 運費另計 · V10.6</span><button class="adminSecret" aria-label="開啟店主後台" title="店主" onclick="openAdmin()">⚙</button></footer>
+ <footer class="siteFooter"><span>© <span id="footerShop">享頑一番</span> · 日圓換算報價 <span id="footerRate">×0.27</span> · 運費另計 · V10.9</span><button class="adminSecret" aria-label="開啟店主後台" title="店主" onclick="openAdmin()">⚙</button></footer>
 </main><div id="adminOverlay" hidden class="adminOverlay" onclick="if(event.target===this)closeAdmin()"><aside class="adminDrawer" role="dialog" aria-modal="true" aria-labelledby="adminTitle"><header class="adminTop"><div><small>MANAGEMENT</small><h2 id="adminTitle">店主後台</h2></div><button class="closeAdmin" aria-label="關閉後台" onclick="closeAdmin()">✕</button></header><div id="adminSurface"></div></aside></div><div id="toast" hidden class="flash"></div>
 <script>
 // JPM V9.6.2：此網頁直接指定已確認的 GAS 部署網址，避免舊 config.js 快取導致未連線。
@@ -579,6 +577,21 @@ const $=s=>document.querySelector(s), H=s=>String(s===null||s===undefined?'':s).
 const STORES=['未指定店家','安麗美特','唐吉訶德','藥妝店','其他店家'];
 const PURCHASE_TERMS_VERSION='2026-10-24-v2';
 const CATEGORIES=['未分類','卡牌類','公仔類','家電類','雜物類','扭蛋類','陀螺逆轉金幣類'];
+
+const CATEGORY_ICON_MAP={
+ '公仔類':'🎎',
+ '卡牌類':'🃏',
+ '扭蛋類':'🎁',
+ '陀螺逆轉金幣類':'🪀',
+ '家電類':'🔌',
+ '雜物類':'🧩',
+ '未分類':'📦'
+};
+function renderCompactCategories(){
+ const all=`<button type="button" class="categoryChip ${!state.category?'active':''}" onclick="quickCategory('')">全部</button>`;
+ return `<div class="categoryRail" role="group" aria-label="商品分類">${all}`+CATEGORIES.map(v=>`<button type="button" class="categoryChip ${state.category===v?'active':''}" onclick="quickCategory('${v}')">${CATEGORY_ICON_MAP[v]||'•'} ${v}</button>`).join('')+`</div>`;
+}
+
 function opts(list,selected,allLabel){return (allLabel?`<option value="">${H(allLabel)}</option>`:'')+list.map(v=>`<option value="${H(v)}" ${v===selected?'selected':''}>${H(v)}</option>`).join('');}
 const money=n=>'NT$'+Number(n||0).toLocaleString('zh-TW'), yen=n=>'¥'+Number(n||0).toLocaleString('ja-JP'), twd=n=>Math.round(Number(n||0)*SHOP_RATE), quote=n=>({total:twd(n)}), date=n=>n?new Date(Number(n)).toLocaleString('zh-TW',{hour12:false}):'－';
 const statusName={REQUESTED:'待確認是否買得到',AWAITING_PAYMENT:'請在1小時內轉台幣全額',PAYMENT_REPORTED:'已回報全額匯款／待核帳',PAID:'全額已確認／待採購',BOUGHT:'店家已購得・準備配送',SHIPPING_SELECTED:'已選好配送方式',SHIPPED:'已出貨',COMPLETED:'已完成',UNAVAILABLE:'目前無法購得',CANCELLED:'轉帳逾時取消',REFUND_PENDING:'缺貨待退款'};
@@ -672,21 +685,18 @@ function changeQty(id,d){
 }
 function render(){if(state.tab==='shop')return renderShop();if(state.tab==='cart')return renderCart();return renderOrder();}
 function renderShop(){
- $('#content').innerHTML=`<section class="storefrontHero" aria-label="享頑一番 商城介紹"><img src="assets/hero-art.webp" class="heroIllustration" alt="動漫收藏主題視覺"><div class="heroCopy"><span class="heroEyebrow">一番賞 · 動漫周邊 · 日本代購</span><h2>讓喜歡的世界，更近一點。</h2><p>日本連線現場代購，把一番賞、公仔與心動的周邊帶回家。</p><button type="button" class="primary heroAction" onclick="document.getElementById('productCatalogue').scrollIntoView({behavior:'smooth'})">立即逛逛 ↗</button><span class="heroFine">日幣 × ${SHOP_RATE.toFixed(2)} 換算台幣・運費另行報價</span></div></section>
- <div class="introStrip"><strong>✦ 日本連線代購 <b>× ${SHOP_RATE.toFixed(2)}</b></strong><span>需要確認有貨的商品，店主確認後才會開放付款</span></div>
- <section aria-label="收藏商品分類"><div class="catalogHeading"><h2>人氣收藏分類</h2><small>EXPLORE CATEGORIES</small></div><div class="quickCategories"><button type="button" class="quickCategory" onclick="quickCategory('公仔類')"><span class="categoryIcon">🎎</span><span>公仔類</span></button><button type="button" class="quickCategory" onclick="quickCategory('扭蛋類')"><span class="categoryIcon">🎲</span><span>扭蛋類</span></button><button type="button" class="quickCategory" onclick="quickCategory('卡牌類')"><span class="categoryIcon">🃏</span><span>卡牌類</span></button><button type="button" class="quickCategory" onclick="quickCategory('陀螺逆轉金幣類')"><span class="categoryIcon">🪀</span><span>陀螺逆轉金幣類</span></button></div></section>
- <section id="productCatalogue" aria-label="所有商品"><div class="catalogHeading"><h2>本月注目・熱門推薦</h2><small>JAPAN LIVE COLLECTION</small></div>
+ $('#content').innerHTML=`<section class="compactShopTop">${renderCompactCategories()}</section>
+ <section id="productCatalogue" aria-label="所有商品"><div class="catalogHeading compact"><h2>最新上架商品</h2><small>PRODUCT LIST</small></div>
  <div class="filterBar"><input id="shopSearch" type="search" value="${H(state.search)}" class="shopTextSearch" placeholder="搜尋商品名稱或關鍵字" aria-label="搜尋商品" onkeydown="if(event.key==='Enter')searchNow()" />
  <select id="shopStore" class="filterSelect" onchange="searchNow()" aria-label="篩選店家">${opts(STORES,state.store,'全部店家')}</select>
  <select id="shopCategory" class="filterSelect" onchange="searchNow()" aria-label="篩選商品類別">${opts(CATEGORIES,state.category,'全部種類')}</select>
  <button type="button" class="soft" onclick="searchNow()">搜尋</button></div>
  <div id="photoErrorNote" class="photoErrorNotice" hidden>部分照片尚未載入，可能是 Drive 縮圖仍在處理或格式不支援。<button onclick="retryVisiblePhotos()">重試圖片</button></div>
  <div id="products" class="grid" aria-live="polite"></div>
- <div class="loadMore"><button id="more" onclick="loadProducts(false)" hidden>看更多商品</button></div></section>
- <section class="studioBenefits"><div class="studioBenefit"><span class="benefitIcon">💴</span><div><strong>透明日幣換算</strong><small>本商城匯率 × ${SHOP_RATE.toFixed(2)}</small></div></div><div class="studioBenefit"><span class="benefitIcon">📦</span><div><strong>配送方式可選</strong><small>店內集運、EMS、空運與海運</small></div></div><div class="studioBenefit"><span class="benefitIcon">🧾</span><div><strong>查詢訂單進度</strong><small>下單後可使用訂單資訊查詢</small></div></div></section>`;
+ <div class="loadMore"><button id="more" onclick="loadProducts(false)" hidden>看更多商品</button></div></section>`;
  loadProducts(true);
 }
-function quickCategory(category){state.category=category;state.store='';state.search='';state.offset=0;renderShop();document.getElementById('productCatalogue').scrollIntoView({behavior:'smooth'});}
+function quickCategory(category){state.category=category||'';state.store='';state.search='';state.offset=0;renderShop();const target=document.getElementById('productCatalogue');if(target)target.scrollIntoView({behavior:'smooth'});}
 function searchNow(){state.search=$('#shopSearch')?.value.trim()||'';state.store=$('#shopStore').value;state.category=$('#shopCategory').value;state.offset=0;loadProducts(true);}
 async function loadProducts(reset){
  if(reset)state.offset=0;const box=$('#products'),more=$('#more');if(reset)box.innerHTML='<p class="muted">商品載入中...</p>';
