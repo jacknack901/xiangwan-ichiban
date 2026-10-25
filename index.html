@@ -304,12 +304,147 @@ body.brand-xiangwan{--bg:#f6f2e9;--surface:#fffdf8;--card:#f2e7d7;--border:#dccb
 .brand-xiangwan .checkoutSection .field input,.brand-xiangwan .checkoutSection .field textarea{border-radius:3px}.brand-xiangwan .deliveryChoice{border-radius:3px}
 @media(max-width:600px){.brand-xiangwan .brand{gap:11px;padding:17px 11px;margin:0 0 13px}.brand-xiangwan .brand:before{width:44px;height:44px;font-size:17px;flex-shrink:0}.brand-xiangwan .brand h1{font-size:21px;letter-spacing:1px}.brand-xiangwan .brand small{font-size:9px;letter-spacing:1px}.brand-xiangwan .headerTag{font-size:10px;padding:5px}.brand-xiangwan .hero{padding:20px 15px;border-width:5px}.brand-xiangwan .hero:after{right:10px;top:-4px;font-size:100px}.brand-xiangwan .nav button{padding:12px 6px}}
 
+
+
+/* V10.5 Brand Design System — storefront visual layer only. Merchant order/GAS code remains original V10.4. */
+body.brand-v105{--studioAccent:#a56bf8;--studioBg:#10101b;--studioPaper:#171827;--studioText:#f8f6ff;--studioMuted:#c1bdd6;--studioStroke:rgba(255,255,255,.16);--studioButton:#7f4de6;background:var(--studioBg);color:var(--studioText);font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif}
+body.brand-v105.brand-wanye{--studioBg:#080914;--studioPaper:#111323;--studioAccent:#bd66ff;--studioButton:#a347ff;--studioText:#f7f4ff;--studioMuted:#b8b5d2;--studioStroke:#3c325b;
+ background:radial-gradient(circle at 82% 7%,#28133d 0,transparent 38%),#080914}
+body.brand-v105.brand-xiangwan{--studioBg:#fff8ee;--studioPaper:#fffdf8;--studioAccent:#b62a2a;--studioButton:#c02b35;--studioText:#33211a;--studioMuted:#796358;--studioStroke:#e6d3ba;
+ background:repeating-radial-gradient(circle at 0 0,transparent 0 28px,rgba(178,65,31,.035) 29px 30px),#fff8ee;font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif}
+body.brand-v105.brand-marushima{--studioBg:#f8f6ec;--studioPaper:#fffdf7;--studioAccent:#a68045;--studioButton:#063c34;--studioText:#18382d;--studioMuted:#6e7265;--studioStroke:#e2d8c2;background:#f8f6ec;font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif}
+.brand-v105 .wrap{max-width:1160px;padding:0 24px 24px}
+.brand-v105 .brand{margin:0 -24px!important;padding:17px 24px!important;background:var(--studioPaper);border:0!important;box-shadow:none!important;display:flex;align-items:center;gap:22px;min-height:100px}
+.brand-v105 .brand::before,.brand-v105 .brand::after{content:none!important;display:none!important}
+.brand-v105 .brandLogo{display:flex;align-items:center;gap:15px;min-width:0;flex:1}
+.brand-v105 .brandLogoPicture{display:flex;align-items:center;justify-content:center;width:clamp(84px,17vw,150px);height:76px;background:#fff;border-radius:10px;overflow:hidden;border:1px solid rgba(128,128,128,.14);flex-shrink:0}
+.brand-v105 .brandRealLogo{display:block;max-width:95%;max-height:72px;object-fit:contain}
+.brand-v105 .brandText{min-width:0}
+.brand-v105 .brand #shopBrand{font-size:clamp(21px,2.5vw,31px);color:var(--studioText);letter-spacing:.035em;font-weight:900;margin:0;line-height:1.24}
+.brand-v105 .brand small{font-size:11px;letter-spacing:.12em;color:var(--studioMuted);display:block;margin-top:5px}
+.brand-v105 .headerTag{border:1px solid var(--studioStroke);background:transparent;color:var(--studioAccent);font-weight:800;border-radius:50px;padding:7px 11px;white-space:nowrap;font-size:12px}
+.brand-v105.brand-marushima .brand{background:#06382e;color:#f3dfad}
+.brand-v105.brand-marushima .brand #shopBrand{color:#f6dfaa}
+.brand-v105.brand-marushima .brand small{color:#cbbf9a}
+.brand-v105.brand-marushima .headerTag{color:#f4dda7;border-color:#766843}
+.brand-v105.brand-wanye .brand{background:#0b0b17}
+.brand-v105.brand-xiangwan .brand{background:#fff5e6;border-bottom:2px solid #c53b2e!important}
+.brand-v105 .nav{display:flex;gap:9px;overflow:visible;border:0;padding:11px 0 13px!important;margin:0;position:relative}
+.brand-v105 .nav button{background:var(--studioPaper)!important;border:1px solid var(--studioStroke)!important;color:var(--studioText)!important;border-radius:100px!important;padding:12px 19px!important;box-shadow:none!important;font-weight:700!important;letter-spacing:0!important;font-size:13px}
+.brand-v105 .nav button.active{background:var(--studioButton)!important;color:#fff!important;border-color:transparent!important}
+.brand-v105.brand-marushima .nav button.active{color:#fff!important}
+.brand-v105 .storefrontHero{display:flex;align-items:stretch;position:relative;isolation:isolate;min-height:340px;border-radius:22px;overflow:hidden;margin:10px 0 25px;padding:clamp(24px,5vw,54px);box-shadow:0 18px 38px rgba(0,0,0,.16);background:linear-gradient(115deg,#1b1726,#312347);color:white}
+.brand-v105 .storefrontHero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(10,9,22,.99) 0%,rgba(10,9,22,.95) 35%,rgba(10,9,22,.25) 76%)}
+.brand-v105 .heroIllustration{position:absolute;right:0;top:0;height:100%;width:64%;z-index:-2;object-fit:cover;object-position:center center}
+.brand-v105 .heroCopy{width:min(61%,530px);position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.brand-v105 .heroEyebrow{font-size:12px;letter-spacing:.15em;font-weight:900;opacity:.93;line-height:1.6}
+.brand-v105 .storefrontHero h2{font-size:clamp(30px,4.2vw,53px);line-height:1.2;letter-spacing:.035em;margin:18px 0 14px;font-weight:950;color:#fff;text-shadow:0 3px 11px rgba(0,0,0,.18)}
+.brand-v105 .storefrontHero p{font-size:14px;line-height:1.8;max-width:470px;color:#fbf3e9;margin:0 0 19px}
+.brand-v105 .storefrontHero .heroAction{border-radius:99px!important;background:var(--studioButton)!important;border:0!important;color:white!important;padding:12px 23px!important;font-weight:900!important;box-shadow:none!important}
+.brand-v105 .storefrontHero .heroFine{font-size:11px;color:#eae0e0;margin-top:15px;opacity:.85}
+.brand-v105.brand-xiangwan .storefrontHero{background:#8e271d;border:5px solid #ead3ad;border-radius:12px;box-shadow:0 9px 0 #e9d7bd}
+.brand-v105.brand-xiangwan .storefrontHero::before{background:linear-gradient(90deg,#602318 0%,rgba(100,35,20,.95) 37%,rgba(74,23,18,.2) 83%)}
+.brand-v105.brand-xiangwan .storefrontHero h2{font-family:"Noto Serif TC","Songti TC",serif;color:#fff2d7}
+.brand-v105.brand-marushima .storefrontHero{background:#052b28;border:2px solid #c4a16d;border-radius:3px}
+.brand-v105.brand-marushima .storefrontHero::before{background:linear-gradient(90deg,#043029 0%,rgba(4,48,41,.94) 39%,rgba(5,44,39,.14) 85%)}
+.brand-v105.brand-marushima .storefrontHero h2{font-family:"Noto Serif TC","Songti TC",serif;color:#f4e5b8}
+.brand-v105.brand-marushima .heroAction{background:#dfbf82!important;color:#073b32!important}
+.brand-v105.brand-wanye .storefrontHero{background:#1d1036;border:1px solid #59428c}
+.brand-v105.brand-wanye .storefrontHero::before{background:linear-gradient(90deg,#090b1a 0%,rgba(13,9,27,.93) 35%,rgba(20,10,35,.19) 88%)}
+.brand-v105.brand-wanye .storefrontHero h2{color:#f7efff;text-shadow:0 0 24px rgba(187,93,255,.6)}
+.brand-v105 .introStrip{border:1px solid var(--studioStroke);border-radius:14px;background:var(--studioPaper);display:flex;gap:12px;padding:15px 19px;margin:20px 0;justify-content:space-between;align-items:center;color:var(--studioText)}
+.brand-v105 .introStrip b{color:var(--studioAccent)}
+.brand-v105 .introStrip span{color:var(--studioMuted);font-size:12px}
+.brand-v105 .catalogHeading{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:25px 0 14px}
+.brand-v105 .catalogHeading h2{font-size:clamp(23px,2.8vw,34px);line-height:1.4;margin:0;color:var(--studioText);letter-spacing:.04em}
+.brand-v105 .catalogHeading small{color:var(--studioMuted);font-size:11px;letter-spacing:.15em}
+.brand-v105 .quickCategories{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 22px}
+.brand-v105 .quickCategory{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:9px;background:var(--studioPaper)!important;color:var(--studioText)!important;border:1px solid var(--studioStroke)!important;border-radius:14px!important;padding:19px 9px!important;font-size:13px!important;font-weight:800!important;min-height:100px;box-shadow:none!important}
+.brand-v105 .quickCategory:hover,.brand-v105 .quickCategory:focus-visible{border-color:var(--studioAccent)!important;outline:1px solid var(--studioAccent)!important}
+.brand-v105 .categoryIcon{font-size:28px;line-height:1.4}
+.brand-v105 .filterBar{background:var(--studioPaper);border:1px solid var(--studioStroke);border-radius:12px;margin:0 0 16px;padding:12px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.brand-v105 .filterBar .filterSelect,.brand-v105 .filterBar .shopTextSearch{background:var(--studioBg);color:var(--studioText);border:1px solid var(--studioStroke);border-radius:9px;min-height:42px;padding:10px 12px;flex:1;min-width:130px;font-size:14px}
+.brand-v105 .filterBar .shopTextSearch{min-width:175px;flex:2}
+.brand-v105 .grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}
+.brand-v105 .product{background:var(--studioPaper)!important;border:1px solid var(--studioStroke)!important;border-radius:16px!important;overflow:hidden;box-shadow:none!important;min-width:0}
+.brand-v105 .product:hover{transform:translateY(-2px);transition:transform .2s,border-color .2s;border-color:var(--studioAccent)!important}
+.brand-v105 .product .photo{display:block;aspect-ratio:1;object-fit:cover;width:100%;background:#ddd6d1}
+.brand-v105 .product .info{padding:13px}
+.brand-v105 .product .info strong{display:block;font-size:21px;line-height:1.4;color:var(--studioAccent)!important}
+.brand-v105 .productName{font-size:13px;font-weight:700;line-height:1.5;min-height:2.8em;max-height:2.9em;overflow:hidden;margin:6px 0 9px;color:var(--studioText)}
+.brand-v105 .product .twdPrice{font-weight:750;color:var(--studioText)!important;font-size:14px}
+.brand-v105 .product .productMeta{font-size:11px;color:var(--studioMuted)}
+.brand-v105 .product .stockText{color:var(--studioMuted)}
+.brand-v105 .product .paymentModeTag{font-size:10px;min-height:16px}
+.brand-v105 .product .addButton{width:100%;border:0!important;background:var(--studioButton)!important;color:white!important;border-radius:10px!important;font-weight:800!important;box-shadow:none!important;min-height:42px}
+.brand-v105.brand-marushima .product{border-radius:4px!important}
+.brand-v105.brand-marushima .product .addButton{border-radius:4px!important}
+.brand-v105.brand-xiangwan .product{border-radius:11px!important;box-shadow:3px 3px 0 #eaddc5!important}
+.brand-v105 .studioBenefits{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:28px;margin-bottom:20px}
+.brand-v105 .studioBenefit{display:flex;align-items:center;gap:13px;border:1px solid var(--studioStroke);padding:16px;border-radius:13px;background:var(--studioPaper);color:var(--studioText)}
+.brand-v105 .studioBenefit .benefitIcon{font-size:27px;flex:0 0 auto}
+.brand-v105 .studioBenefit strong{display:block;font-size:14px}
+.brand-v105 .studioBenefit small{color:var(--studioMuted);display:block;font-size:11px;margin-top:4px}
+.brand-v105 .siteFooter{color:var(--studioMuted);border-color:var(--studioStroke);margin-top:30px}
+.brand-v105 .panel{background:var(--studioPaper);border-color:var(--studioStroke);color:var(--studioText)}
+.brand-v105 .panel h2{color:var(--studioText)}
+.brand-v105 .checkoutSection input,.brand-v105 .checkoutSection select,.brand-v105 .checkoutSection textarea{color:var(--studioText);background:var(--studioBg);border:1px solid var(--studioStroke)}
+.brand-v105 .deliveryChoice{background:var(--studioPaper);border:1px solid var(--studioStroke);color:var(--studioText)}
+/* Don't override the original dark administrative drawer's operation styles. */
+.brand-v105 .adminOverlay .panel{background:#211a28;color:#f5edf9;border-color:#4a4054}
+.brand-v105 .adminOverlay .panel h2{color:#f5edf9}
+.brand-v105 .adminOverlay input,.brand-v105 .adminOverlay select,.brand-v105 .adminOverlay textarea{color:#f5edf9;background:#241d2d}
+@media(max-width:850px){
+ .brand-v105 .brand{min-height:80px}.brand-v105 .heroCopy{width:65%}
+ .brand-v105 .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:620px){
+ .brand-v105 .wrap{padding:0 13px 94px}
+ .brand-v105 .brand{margin:0 -13px!important;padding:12px 13px!important;min-height:76px;gap:9px;align-items:center}
+ .brand-v105 .brandLogo{gap:9px}
+ .brand-v105 .brandLogoPicture{width:75px;height:56px;border-radius:6px}
+ .brand-v105 .brandRealLogo{max-height:55px}
+ .brand-v105 .brand #shopBrand{font-size:19px;letter-spacing:0}
+ .brand-v105 .brand small{font-size:9px;letter-spacing:0}
+ .brand-v105 .headerTag{font-size:10px;padding:5px 7px}
+ .brand-v105 .nav{position:fixed;bottom:0;left:0;right:0;z-index:120;padding:10px 10px max(12px,env(safe-area-inset-bottom))!important;margin:0!important;display:flex;background:var(--studioPaper);border-top:1px solid var(--studioStroke);box-shadow:0 -6px 18px rgba(0,0,0,.08);gap:7px}
+ .brand-v105 .nav button{flex:1;min-width:0;padding:10px 3px!important;font-size:12px}
+ .brand-v105 .storefrontHero{min-height:320px;margin:13px 0 18px;padding:23px 20px;border-radius:16px}
+ .brand-v105 .heroIllustration{width:75%;object-position:center}
+ .brand-v105 .storefrontHero::before{background:linear-gradient(90deg,rgba(7,7,15,.99) 0%,rgba(7,7,15,.91) 44%,rgba(7,7,15,.23) 93%)}
+ .brand-v105.brand-xiangwan .storefrontHero::before{background:linear-gradient(90deg,rgba(81,21,17,.99) 0%,rgba(81,21,17,.94) 44%,rgba(81,21,17,.15) 95%)}
+ .brand-v105.brand-marushima .storefrontHero::before{background:linear-gradient(90deg,rgba(3,41,36,.99) 0%,rgba(3,41,36,.92) 48%,rgba(3,41,36,.11) 95%)}
+ .brand-v105 .heroCopy{width:82%}
+ .brand-v105 .heroEyebrow{font-size:10px}
+ .brand-v105 .storefrontHero h2{font-size:29px;margin:11px 0}
+ .brand-v105 .storefrontHero p{font-size:12px;max-width:230px;line-height:1.8}
+ .brand-v105 .storefrontHero .heroAction{padding:10px 19px!important}
+ .brand-v105 .storefrontHero .heroFine{font-size:10px}
+ .brand-v105 .quickCategories{gap:9px;grid-template-columns:repeat(4,minmax(0,1fr))}
+ .brand-v105 .quickCategory{font-size:11px!important;padding:12px 4px!important;min-height:83px;border-radius:9px!important}
+ .brand-v105 .categoryIcon{font-size:23px}
+ .brand-v105 .catalogHeading{margin-top:17px}
+ .brand-v105 .catalogHeading h2{font-size:22px}
+ .brand-v105 .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .brand-v105 .product .info{padding:10px}
+ .brand-v105 .productName{font-size:12px}
+ .brand-v105 .product .info strong{font-size:18px}
+ .brand-v105 .product .addButton{font-size:12px}
+ .brand-v105 .studioBenefits{grid-template-columns:1fr;gap:8px}
+ .brand-v105 .studioBenefit{padding:10px 13px}
+ .brand-v105 .introStrip{align-items:flex-start;flex-direction:column;gap:4px}
+ .brand-v105 .filterBar .shopTextSearch{min-width:100%;order:-1}
+ .brand-v105 .filterBar .filterSelect{min-width:42%;font-size:13px}
+ .brand-v105 .siteFooter{padding:20px 0}
+ .brand-v105 .adminOverlay{z-index:9999}
+}
+
 </style></head>
-<body data-channel="xiangwan" data-shop-name="享頑一番" class="brand-xiangwan"><main class="wrap">
- <header class="brand"><div><h1 id="shopBrand">享頑一番</h1><small>日本直送・賞品市集・ICHIBAN MARKET</small></div><span class="headerTag" id="shopBadge">日本連線 · ×0.27</span></header>
+<body data-channel="xiangwan" data-shop-name="享頑一番" class="brand-xiangwan brand-v105"><main class="wrap">
+ <header class="brand"><div class="brandLogo"><div class="brandLogoPicture"><img class="brandRealLogo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ32lR9WxzCVANVxjQuE1JFLjjxIGbgZ6Ysjtuwd9CnyA&amp;s=10" alt="享頑一番 官方標誌" referrerpolicy="no-referrer" onerror="this.style.display='none';this.parentElement.style.display='none'" loading="eager"></div><div class="brandText"><h1 id="shopBrand">享頑一番</h1><small>熱鬧日本祭典・動漫收藏</small></div></div><span class="headerTag" id="shopBadge">日本連線 · ×0.27</span></header>
  <nav class="nav"><button id="tabShop" onclick="switchTab('shop')" class="active">逛商品</button><button id="tabCart" onclick="switchTab('cart')">購物車 <span id="cartCount">0</span></button><button id="tabOrder" onclick="switchTab('order')">查詢訂單</button></nav>
  <div id="content"></div>
- <footer class="siteFooter"><span>© <span id="footerShop">享頑一番</span> · 日圓換算報價 <span id="footerRate">×0.27</span> · 運費另計 · V10.4</span><button class="adminSecret" aria-label="開啟店主後台" title="店主" onclick="openAdmin()">⚙</button></footer>
+ <footer class="siteFooter"><span>© <span id="footerShop">享頑一番</span> · 日圓換算報價 <span id="footerRate">×0.27</span> · 運費另計 · V10.5</span><button class="adminSecret" aria-label="開啟店主後台" title="店主" onclick="openAdmin()">⚙</button></footer>
 </main><div id="adminOverlay" hidden class="adminOverlay" onclick="if(event.target===this)closeAdmin()"><aside class="adminDrawer" role="dialog" aria-modal="true" aria-labelledby="adminTitle"><header class="adminTop"><div><small>MANAGEMENT</small><h2 id="adminTitle">店主後台</h2></div><button class="closeAdmin" aria-label="關閉後台" onclick="closeAdmin()">✕</button></header><div id="adminSurface"></div></aside></div><div id="toast" hidden class="flash"></div>
 <script>
 // JPM V9.6.2：此網頁直接指定已確認的 GAS 部署網址，避免舊 config.js 快取導致未連線。
@@ -421,20 +556,27 @@ function changeQty(id,d){
 }
 function render(){if(state.tab==='shop')return renderShop();if(state.tab==='cart')return renderCart();return renderOrder();}
 function renderShop(){
- $('#content').innerHTML=`<section class="hero"><strong>日本連線・現場代購</strong><p>日幣售價 × ${SHOP_RATE.toFixed(2)} 即為商品台幣售價。商品有「立即付款」或「確認有貨再付款」兩種模式，皆須在開放付款後60分鐘內匯款。</p><small>運費另計・下訂後原則上不接受任意取消</small></section>
- <section class="filterBar"><select id="shopStore" class="filterSelect" onchange="searchNow()" aria-label="篩選店家">${opts(STORES,state.store,'全部店家')}</select>
- <select id="shopCategory" class="filterSelect" onchange="searchNow()" aria-label="篩選商品類別">${opts(CATEGORIES,state.category,'全部種類')}</select></section>
+ $('#content').innerHTML=`<section class="storefrontHero" aria-label="享頑一番 商城介紹"><img src="assets/hero-art.webp" class="heroIllustration" alt="動漫收藏主題視覺"><div class="heroCopy"><span class="heroEyebrow">一番賞 · 動漫周邊 · 日本代購</span><h2>讓喜歡的世界，更近一點。</h2><p>日本連線現場代購，把一番賞、公仔與心動的周邊帶回家。</p><button type="button" class="primary heroAction" onclick="document.getElementById('productCatalogue').scrollIntoView({behavior:'smooth'})">立即逛逛 ↗</button><span class="heroFine">日幣 × ${SHOP_RATE.toFixed(2)} 換算台幣・運費另行報價</span></div></section>
+ <div class="introStrip"><strong>✦ 日本連線代購 <b>× ${SHOP_RATE.toFixed(2)}</b></strong><span>需要確認有貨的商品，店主確認後才會開放付款</span></div>
+ <section aria-label="收藏商品分類"><div class="catalogHeading"><h2>人氣收藏分類</h2><small>EXPLORE CATEGORIES</small></div><div class="quickCategories"><button type="button" class="quickCategory" onclick="quickCategory('公仔類')"><span class="categoryIcon">🎎</span><span>公仔類</span></button><button type="button" class="quickCategory" onclick="quickCategory('扭蛋類')"><span class="categoryIcon">🎲</span><span>扭蛋類</span></button><button type="button" class="quickCategory" onclick="quickCategory('卡牌類')"><span class="categoryIcon">🃏</span><span>卡牌類</span></button><button type="button" class="quickCategory" onclick="quickCategory('陀螺逆轉金幣類')"><span class="categoryIcon">🪀</span><span>陀螺逆轉金幣類</span></button></div></section>
+ <section id="productCatalogue" aria-label="所有商品"><div class="catalogHeading"><h2>本月注目・熱門推薦</h2><small>JAPAN LIVE COLLECTION</small></div>
+ <div class="filterBar"><input id="shopSearch" type="search" value="${H(state.search)}" class="shopTextSearch" placeholder="搜尋商品名稱或關鍵字" aria-label="搜尋商品" onkeydown="if(event.key==='Enter')searchNow()" />
+ <select id="shopStore" class="filterSelect" onchange="searchNow()" aria-label="篩選店家">${opts(STORES,state.store,'全部店家')}</select>
+ <select id="shopCategory" class="filterSelect" onchange="searchNow()" aria-label="篩選商品類別">${opts(CATEGORIES,state.category,'全部種類')}</select>
+ <button type="button" class="soft" onclick="searchNow()">搜尋</button></div>
  <div id="photoErrorNote" class="photoErrorNotice" hidden>部分照片尚未載入，可能是 Drive 縮圖仍在處理或格式不支援。<button onclick="retryVisiblePhotos()">重試圖片</button></div>
  <div id="products" class="grid" aria-live="polite"></div>
- <div class="loadMore"><button id="more" onclick="loadProducts(false)" hidden>看更多商品</button></div>`;
+ <div class="loadMore"><button id="more" onclick="loadProducts(false)" hidden>看更多商品</button></div></section>
+ <section class="studioBenefits"><div class="studioBenefit"><span class="benefitIcon">💴</span><div><strong>透明日幣換算</strong><small>本商城匯率 × ${SHOP_RATE.toFixed(2)}</small></div></div><div class="studioBenefit"><span class="benefitIcon">📦</span><div><strong>配送方式可選</strong><small>店內集運、EMS、空運與海運</small></div></div><div class="studioBenefit"><span class="benefitIcon">🧾</span><div><strong>查詢訂單進度</strong><small>下單後可使用訂單資訊查詢</small></div></div></section>`;
  loadProducts(true);
 }
-function searchNow(){state.search='';state.store=$('#shopStore').value;state.category=$('#shopCategory').value;state.offset=0;loadProducts(true);}
+function quickCategory(category){state.category=category;state.store='';state.search='';state.offset=0;renderShop();document.getElementById('productCatalogue').scrollIntoView({behavior:'smooth'});}
+function searchNow(){state.search=$('#shopSearch')?.value.trim()||'';state.store=$('#shopStore').value;state.category=$('#shopCategory').value;state.offset=0;loadProducts(true);}
 async function loadProducts(reset){
  if(reset)state.offset=0;const box=$('#products'),more=$('#more');if(reset)box.innerHTML='<p class="muted">商品載入中...</p>';
  try{
  const data=await rpc('products',{search:state.search,store:state.store,category:state.category,offset:state.offset});
- const cards=data.items.map(p=>`<article class="product ${p.soldOut?'soldout':''}" aria-label="${p.soldOut?'已完售商品':'可代購商品'}"><div class="photoWrap"><img class="photo" loading="lazy" src="${THUMB_PLACEHOLDER}" data-photo-id="${H(p.id)}" alt="代購商品照片">${p.soldOut?'<span class="soldRibbon">已完售</span>':''}</div><div class="info"><div class="productMeta"><span>${H(p.store)}</span><span>${H(p.category)}</span></div><strong>${yen(p.price)}</strong><div class="twdPrice">台幣 ${money(p.priceTwd)}</div><small class="stockText">${p.soldOut?'已完售':p.available===null?'可代購・數量現場確認':'剩餘 '+p.available+' 件'}</small><small class="paymentModeTag ${p.payMode==='DIRECT'?'payDirect':'payConfirm'}">${payModeLabel(p.payMode)}</small><button class="primary addButton" data-add="${H(p.id)}" ${p.soldOut?'disabled':''}>${p.soldOut?'已完售':'＋ 加入購物車'}</button></div></article>`).join('');
+ const cards=data.items.map(p=>`<article class="product ${p.soldOut?'soldout':''}" aria-label="${p.soldOut?'已完售商品':'可代購商品'}"><div class="photoWrap"><img class="photo" loading="lazy" src="${THUMB_PLACEHOLDER}" data-photo-id="${H(p.id)}" alt="代購商品照片">${p.soldOut?'<span class="soldRibbon">已完售</span>':''}</div><div class="info"><div class="productMeta"><span>${H(p.store)}</span><span>${H(p.category)}</span></div><div class="productName">${H(p.name||p.title||p.category||"日本選物")}</div><strong>${yen(p.price)}</strong><div class="twdPrice">台幣 ${money(p.priceTwd)}</div><small class="stockText">${p.soldOut?'已完售':p.available===null?'可代購・數量現場確認':'剩餘 '+p.available+' 件'}</small><small class="paymentModeTag ${p.payMode==='DIRECT'?'payDirect':'payConfirm'}">${payModeLabel(p.payMode)}</small><button class="primary addButton" data-add="${H(p.id)}" ${p.soldOut?'disabled':''}>${p.soldOut?'已完售':'＋ 加入購物車'}</button></div></article>`).join('');
  if(reset){state.items=data.items;box.innerHTML=cards||'<p>目前沒有符合條件的上架商品</p>';}else{state.items.push(...data.items);box.insertAdjacentHTML('beforeend',cards);}
  state.offset+=data.items.length;more.hidden=state.offset>=data.total;box.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>addCart(b.dataset.add));hydrateThumbs(box,false);
  }catch(e){if(reset)box.innerHTML='<p class="error">讀取失敗，請稍後重試</p>';notify(e.message,true);}
